@@ -1,0 +1,115 @@
+/*Pseudoclases AFTER*/
+/*Pseudoclases de estado*/
+
+section a{
+    text-decoration: none;
+    color: gray;
+}
+
+/*cuando paso por arriba el mouse*/
+section a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    color: chartreuse;
+}
+
+/*Cuando hago click sobre el elemento*/
+
+section a:active{
+    background-color: yellow;
+}
+
+/*links que aun no fueron visitados*/
+section a:link{
+    color: red;
+}
+
+/*links que ya fueron visitados*/
+section a:visited{
+    color: black;
+}
+
+/*Pseudoclases de posicion*/
+
+.elementos, .elementos2, .parrafos, .listas{
+    background-color: gray;
+    padding: 10px;
+    width: 50%;
+    margin: 25px auto;
+}
+
+.parrafos p{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.parrafos p:first-child{
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+
+.parrafos p:last-child{
+    color: blue;
+    font-size: 30px;
+}
+
+.elementos p:first-of-type{
+    color: white;
+    height: 250px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listas :nth-child(even){
+    color: white;
+    background-color: green;
+    list-style-type: none;
+}
+
+.listas :nth-last-child(4){
+    color: white;
+    background-color: red;
+    list-style-type: none;
+}
+
+.elementos2 p:nth-of-type(2){
+    color: white;
+    background-color: red;
+    list-style-type: none;
+}
+
+.elementos2 span:nth-last-of-type(2){
+    color: white;
+    background-color: blue;
+    list-style-type: none;
+}
+
+/*Pseudoclases para formularios*/
+.formulario .nombre:focus{
+    border: solid 2px red;
+}
+
+.formulario .email:invalid{
+    background-color: red;
+}
+
+.formulario .email:valid{
+    background-color: green;
+}
+
+.formulario .deshabilitado:disabled{
+    background-color: rgb(38, 36, 36);
+}
+
+.formulario .telefono:required{
+    background-color: yellow;
+}
+
+
+
+
+

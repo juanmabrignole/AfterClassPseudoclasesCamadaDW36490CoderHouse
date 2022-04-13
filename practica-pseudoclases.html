@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../AfterClassPseudoclases/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../AfterClassPseudoclases/css/pseudoclases.css">
+    <title>Practica Pseudoclases</title>
+</head>
+<body>
+    <section>
+        <a href="#">Inicio</a>
+        
+        <a href="#">Nosotros</a>
+        
+        <a href="#">Trabajos</a>
+        
+        <a href="#">Proyectos</a>
+        
+        <a href="#">Contacto</a>
+    </section>
+
+    <div class="parrafos">
+        <p>Primer parrafo</p>
+        <p>Segundo parrafo</p>
+        <p>Tercer parrafo</p>
+    </div>
+    
+    <div class="elementos">
+        <p>Primer parrafo</p>
+        <div>Soy un div</div>
+        <p>Segundo parrafo</p>
+        <span>Soy un span</span>
+        <div>Soy otr div</div>
+        <span>Soy otro span</span>
+    </div>
+
+    <div class="elementos2">
+        <p>Primer parrafo</p>
+        <div>Soy un div</div>
+        <p>Segundo parrafo</p>
+        <span>Soy un span</span>
+        <div>Soy otr div</div>
+        <span>Soy otro span</span>
+    </div>
+    
+    <ul class="listas">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+        <li>Elemento 7</li>
+        <li>Elemento 8</li>
+    </ul>
+
+
+    <div class="container">
+        <form id="backForm" action="procesar.php" method="post">
+            <fieldset>
+                <legend>Formulario de Contacto</legend>
+            
+            <div class="formulario form-group">
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" placeholder="ingresatunombre" class="nombre form-control">
+            </div>
+    
+            <div class="formulario form-group">
+            <label for="apellido">Apellido: </label>
+            <input type="text" name="apellido" placeholder="ingresatuapellido" class="apellido form-control">
+            </div>
+    
+            <div class="formulario form-group">
+                <label for="pass">Contrasena: </label>
+                <input type="password" placeholder="deshabilitado" name="pass" class="deshabilitado form-control" disabled>
+            </div>
+    
+            <div class=" formulario form-group">
+                <label for="email">Email: </label>
+                <input type="email" name="email" class=" email form-control">
+            </div>
+    
+            <div class="formulario form-group">
+                <label for="telefono">Telefono: </label>
+                <input type="tel" name="telefono" class="telefono form-control" required>
+            </div>
+    
+            <!--Checkbox-->
+            <h6>Coleccion</h6>
+    
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="oasis" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Oasis
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="catarsis" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Catarsis
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="soleado" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Soleado
+                </label>
+              </div>
+              
+    
+            <!--Radio-->
+            <h6>Estado Civil</h6>
+            <div class="form-check" my-2>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Casado/a
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Soltero/a
+                </label>
+              </div>
+              
+    
+            <!--Menu Desplegable-->
+            <h6>Tecnica</h6>
+            <select name="tecnica" id="">
+                <option value="serigrafia">Serigrafia</option>
+                <option value="aquarela">Aquarela</option>
+                <option value="dibujo">Dibujo</option>
+                
+            </select>
+    
+            <!--Textarea-->
+            <h6>Dejame tu comentario</h6>
+            <textarea class="form-control" name="comentario" id="" cols="30" rows="10"></textarea>
+    
+    
+            <!--Botones -->
+            <div>
+            <input class="btn btn-outline-primary my-2" type="submit" value="Enviar">
+            </div>
+            <div>
+            <input class="btn btn-outline-danger my-2" type="reset" value="Borrar Formulario">
+            </div>
+            
+          </fieldset>
+        </form>
+     
+    </div>
+    
+    
+        
+        <footer id="footer">
+            <p>Todos los derechos reservados</p>
+        </footer>
+    
+    <script src="../AfterClassPseudoclases/libs/bootstrap/js/bootstrap.min.js" ></script>
+</body>
+</html>
